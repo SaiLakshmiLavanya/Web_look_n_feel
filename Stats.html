@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CrimeSpotter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/font-awesome.min.css">
+ <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer", {
+
+
+      data: [//array of dataSeries              
+        { //dataSeries object
+
+         /*** Change type "column" to "bar", "area", "line" or "pie"***/
+         type: "pie",
+         dataPoints: [
+		 { label: "Abandoned/Condemned Structure", y: 4128},
+{ label: "Air/Bus/Train Terminal", y: 13959},
+{ label: "Amusement Park", y: 1387},
+{ label: "Arena/Stadium/Fairgrounds/Coliseum", y: 1874},
+{ label: "ATM Separate from Bank", y: 4773},
+{ label: "Auto Dealership New/Used", y: 28185},
+{ label: "Bank/Savings and Loan", y: 64762},
+{ label: "Bar/Nightclub", y: 19275},
+{ label: "Camp/Campground", y: 3869},
+{ label: "Church/Synagogue/Temple/Mosque", y: 24326},
+{ label: "Commercial/Office Building", y: 162371},
+{ label: "Community Center", y: 4391},
+{ label: "Construction Site", y: 41250},
+{ label: "Convenience Store", y: 167399},
+{ label: "Cyberspace", y: 62332},
+{ label: "Daycare Facility", y: 2539},
+{ label: "Department/Discount Store", y: 322674},
+{ label: "Dock/Wharf/Freight/Modal Terminal", y: 2562},
+{ label: "Drug Store/Doctor's Office/Hospital", y: 50634},
+{ label: "Farm Facility", y: 6753},
+{ label: "Field/Woods", y: 27570},
+{ label: "Gambling Facility/Casino/Race Track", y: 6791},
+{ label: "Government/Public Building", y: 38379},
+{ label: "Grocery/Supermarket", y: 167532},
+{ label: "Highway/Road/Alley/Street/Sidewalk", y: 451496},
+{ label: "Hotel/Motel/Etc.", y: 83772},
+{ label: "Industrial Site", y: 11125},
+{ label: "Jail/Prison/Penitentiary/Corrections Facility", y: 5955},
+{ label: "Lake/Waterway/Beach", y: 4787},
+{ label: "Liquor Store", y: 15484},
+{ label: "Military Installation", y: 170},
+{ label: "Park/Playground", y: 34723},
+{ label: "Parking/Drop Lot/Garage", y: 577436},
+{ label: "Rental Storage Facility", y: 49897},
+{ label: "Residence/Home", y: 2194766},
+{ label: "Rest Area", y: 1327},
+{ label: "Restaurant", y: 86777},
+{ label: "School/College", y: 8233},
+{ label: "School-College/University", y: 19360},
+{ label: "School-Elementary/Secondary", y: 22877},
+{ label: "Service/Gas Station", y: 95103},
+{ label: "Shelter-Mission/Homeless", y: 2707},
+{ label: "Shopping Mall", y: 21500},
+{ label: "Specialty Store", y: 141747},
+{ label: "Tribal Lands", y: 276},
+{ label: "Other/Unknown", y: 312036}
+
+         ]
+       }
+       ]
+     });
+
+    chart.render();
+  }
+  </script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+</head>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button w3-wide"><img src="crimespot.png" width="150" ></a>
+    <!-- Right-sided navbar links -->
+	<br>
+    <div class="w3-right w3-hide-small">
+      <a href="page_ref.html" class="w3-bar-item w3-button"><i class="fa-solid fa-house"></i>Home</a>
+      <a href="search.html" class="w3-bar-item w3-button"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+      <a href="stats.html" class="w3-bar-item w3-button"><i class="fa-solid fa-chart-area"></i> Statistics</a>
+      <a href="About_us.html" class="w3-bar-item w3-button"><i class="fa-solid fa-user"></i> About Us</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="page_ref.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="search.html" onclick="w3_close()" class="w3-bar-item w3-button">Search</a>
+  <a href="stats.html" onclick="w3_close()" class="w3-bar-item w3-button">Statistics</a>
+  <a href="About_us.html" onclick="w3_close()" class="w3-bar-item w3-button">About Us</a>
+</nav>
+</div>
+<br>
+</br>
+<br></br>
+
+<body>
+<h2 style = "text-align: center;"> Total Percentages of Crime across Location </h2>
+<div id="chartContainer" style="height:100%; width: 100%;">
+  </div>
+</body>
+</html>
