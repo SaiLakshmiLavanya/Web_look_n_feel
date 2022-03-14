@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CrimeSpotter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/font-awesome.min.css">
+<style>
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+
+</head>
+
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button w3-wide"><img src="crimespot.png" width="150" ></a>
+    <!-- Right-sided navbar links -->
+	<br>
+    <div class="w3-right w3-hide-small">
+      <a href="page_ref.html" class="w3-bar-item w3-button"><i class="fa-solid fa-house"></i>Home</a>
+      <a href="search.html" class="w3-bar-item w3-button"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+      <a href="stats.html" class="w3-bar-item w3-button"><i class="fa-solid fa-chart-area"></i> Statistics</a>
+      <a href="About_us.html" class="w3-bar-item w3-button"><i class="fa-solid fa-user"></i> About Us</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="page_ref.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="search.html" onclick="w3_close()" class="w3-bar-item w3-button">Search</a>
+  <a href="stats.html" onclick="w3_close()" class="w3-bar-item w3-button">Statistics</a>
+  <a href="About_us.html" onclick="w3_close()" class="w3-bar-item w3-button">About Us</a>
+</nav>
+<div class="w3-container" style="padding:128px 16px ;text-align: center;">
+  <h3 class="w3-center">Offense Category</h3>
+  <input type="text" id="Offense_Category" name="Offense_Category"><br><br>
+            <button type="button">Search</button>
+            <button type="button">Create New</button>
+			<button type="button">Delete</button>
+<br>
+<br>
+ <caption> <b>Crime_Rate Summary</b>
+ <br>
+ <table class="center" border=1>
+  <tr><th> Offense_Category</th><th>Incidents</th><th>Offenses</th><th>Victims</th><th>Known_offenders</tr>
+  <tr><th>Assault Offenses</th><td> 17,64,562</td><td> 20,63,412</td><td> 20,63,412</td><td>19,16,007</td></tr>
+ </table>
+ <br>
+ <caption> <b>Victims with respect to Age Category</b>
+ 
+ <br>
+ <table class="center" border=1>
+  <tr><th rowspan="2"</th> Offense_Category<th colspan="14" </th>Age_category</tr>
+  <tr><th>10 and under</th><th>11 - 15</th><th>16 - 20</th><th>21 - 25</th><th>26 - 30</th><th>31 - 35</th><th>36 - 40</th><th>41 - 45</th>
+  <th>46 - 50</th><th>51 - 55</th><th>56 - 60</th><th>61 - 65</th><th>66 and Over</th><th>Unknown Age</th>
+</tr>
+<tr><th>Assault Offenses</th><td>63,017</td><td>88,630</td><td>2,03,136</td><td>2,77,106</td><td>2,95,344</td><td>2,62,695</td><td>2,21,466</td>
+<td>1,64,949</td><td>1,39,273</td><td>1,11,736</td><td>91,895</td><td>57,014</td><td>62,329</td><td>24,822</td></tr>
+</table>
+<br>
+<caption> <b>Offenders with respect to Age Category</b>
+ <br>
+ <table class="center" border=1>
+  <tr><th rowspan="2"</th> Offense_Category<th colspan="14" </th>Age_category</tr>
+  <tr><th>10 and under</th><th>11 - 15</th><th>16 - 20</th><th>21 - 25</th><th>26 - 30</th><th>31 - 35</th><th>36 - 40</th><th>41 - 45</th>
+  <th>46 - 50</th><th>51 - 55</th><th>56 - 60</th><th>61 - 65</th><th>66 and Over</th><th>Unknown Age</th>
+</tr>
+<tr><th>Assault Offenses</th><td>5,577</td><td>78,696</td><td>1,94,618</td><td>2,66,881</td><td>2,92,506</td><td>2,57,809</td><td>2,11,945</td>
+<td>1,46,420</td><td>1,11,318</td><td>85,480</td><td>67,479</td><td>35,492</td><td>32,263</td><td>1,29,523</td></tr>
+</table>
+
+</table>
+<br>
+<caption> <b>Victims with respect to Race</b>
+ <br>
+ <table class="center" border=1>
+  <tr><th rowspan="2"</th> Offense_Category<th colspan="6" </th>Race</tr>
+  <tr><th>White</th><th>Black or African or American</th><th>American Indian or Alaska Native</th><th>Asian</th><th>Native Hawaiian or Other Pacific Islander</th><th>Unknown Race</th> </tr>
+  <tr><th>Assault Offenses</th><td>12,76,886</td><td>6,65,822</td><td>22,031</td><td>23,463</td><td>5,670</td><td>69,540</td></tr>
+</table>
+
+</table>
+<br>
+<caption> <b>Offenders with respect to Race</b>
+ <br>
+ <table class="center" border=1>
+  <tr><th rowspan="2"</th> Offense_Category<th colspan="6" </th>Race</tr>
+  <tr><th>White</th><th>Black or African or American</th><th>American Indian or Alaska Native</th><th>Asian</th><th>Native Hawaiian or Other Pacific Islander</th><th>Unknown Race</th> </tr>
+  <tr><th>Assault Offenses</th><td>10,37,246</td><td>7,22,340</td><td>23,948</td><td>18,007</td><td>5,697</td><td>1,08,769</td></tr>
+</table>
+
+</table>
+<br>
+<caption> <b>Victims with respect to Sex</b>
+ <br>
+ <table class="center" border=1>
+  <tr><th rowspan="2"</th> Offense_Category<th colspan="3" </th>Sex</tr>
+  <tr><th>Male</th><th>Female</th><th>Unknown_Sex</th>
+  <tr><th>Assault Offenses</th><td>8,74,186</td><td>11,78,359</td><td>10,867</td>
+ </table>
+ 
+</table>
+<br>
+<caption> <b>Offenders with respect to Sex</b>
+ <br>
+ <table class="center" border=1>
+  <tr><th rowspan="2"</th> Offense_Category<th colspan="3" </th>Sex</tr>
+  <tr><th>Male</th><th>Female</th><th>Unknown_Sex</th>
+  <tr><th>Assault Offenses</th><td>13,22,054</td><td>5,41,137</td><td>52,816</td>
+ </table>
+</table>
+<br>
+<caption> <b>Offenders with respect to Sex</b>
+ <br>
+ <table class="center" border=1>
+  <tr><th rowspan="2"</th> Offense_Category<th colspan="3" </th>Sex</tr>
+  <tr><th>Male</th><th>Female</th><th>Unknown_Sex</th>
+  <tr><th>Assault Offenses</th><td>13,22,054</td><td>5,41,137</td><td>52,816</td>
+ </table>
+ <br>
+ <button type="button">Update table</button>
+ <button type="button">Update category</button>
+  
+
+</div>
+
+ 
+</body>
+</html>
