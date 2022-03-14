@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CrimeSpotter</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/font-awesome.min.css"
+<style>
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+  
+ .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.align{
+	text-align: center;
+}
+
+
+</style>
+</head>
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button w3-wide"><img src="crimespot.png" width="150" ></a>
+    <!-- Right-sided navbar links -->
+	<br>
+    <div class="w3-right w3-hide-small">
+      <a href="page_ref.html" class="w3-bar-item w3-button"><i class="fa-solid fa-house"></i>Home</a>
+      <a href="search.html" class="w3-bar-item w3-button"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+      <a href="stats.html" class="w3-bar-item w3-button"><i class="fa-solid fa-chart-area"></i> Statistics</a>
+      <a href="About_us.html" class="w3-bar-item w3-button"><i class="fa-solid fa-user"></i> About Us</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="page_ref.html" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="search.html" onclick="w3_close()" class="w3-bar-item w3-button">Search</a>
+  <a href="stats.html" onclick="w3_close()" class="w3-bar-item w3-button">Statistics</a>
+  <a href="About_us.html" onclick="w3_close()" class="w3-bar-item w3-button">About Us</a>
+</nav>
+</div>
+<br>
+<br>
+<br>
+
+<h2 style = "text-align: center;">About Us</h2>
+
+<div style = "text-align: center;">
+    <img src="lavanya.jpeg" height="300" width="300" border="5px" class = "center">
+	<h4 style = "text-align: center;"> Lavanya Rekkala</h4>
+    <p>  A graduate student currently pursuing Business Analytics & Information Systems at USF. Further, worked using Oracle SQL Developer in Tata Consultancy Services during the period 2018-2021.</p>
+	<p> Worked on the home page and Search Page</p>
+	<br></br>
+	<br></br>
+</div>
+<div style = "text-align: center;">
+    <img src="Amruth.jpeg" height="300" width="300" border="5px">
+	<h4 > Amrut Vegesna</h4>
+    <p > A graduate student in Business Analytics & Information Systems at USF, Amrut has worked as Systems Engineer for 2 plus  years with expertise in Data Warehouse Technologies and ETL Testing at Infosys.</p>
+	<p> Worked on Statistics Page and created visualizations using Tableau</p>
+	<br></br>
+	<br></br>
+</div>
+<div style = "text-align: center;">
+    <img src="Anil.jpeg" height="300" width="300" border="5px">
+	<h4>Anil Kumar Vannela</h4>
+    <p> A graduate student in Business Analytics & Information Systems at USF, Anil has worked as an Analytics Conusltant with
+ expertise in building and delivering business solutions using various statistical techniques. He is passionate about bridging
+ the gap between technology and businesses while enhancing the decision-making ability of the business stake holders.</p>
+	<p> Worked on About Us Page along with datamodeling using Visio</p>
+	<br></br>
+	<br></br>
+</div>
+<blockquote>
+<div style = "text-align: center;">
+<h1>References</h1>
+</div>
+<div class = para>
+<p> Data has been fetched from API.data.gov</p>
+<p> The Dataset includes information collected by the Federal Bureau of Investigation during the year 2020</p>
+<p> Kindly refer to our source code at GitHub <a href="https://github.com/cchakka/Assignment-3-Look-and-Feel" style = "text-align: right, color = blue">GitHub</a></p>
+<div style = "text-align: center;">
+<h3> <b>  Data Model </b> </h3>
+<div style = "text-align: center;">
+    <img src="ERD.jpeg" height="700" width="700" border="5px">
+<br>
+</br>
+
+</div>
+</body>
+</html>
+
